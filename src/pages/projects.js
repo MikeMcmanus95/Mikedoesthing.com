@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 const Projects = ({ data }) => {
   return (
     <div>
       <Layout>
+        <SEO title="Projects" />
         <h1>My Projects</h1>
         {data.allMarkdownRemark.edges.map(post => (
           <div key={post.node.id}>
