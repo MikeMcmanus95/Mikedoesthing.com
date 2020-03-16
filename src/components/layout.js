@@ -25,14 +25,14 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="layout">
+      <main>{children}</main>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Menu />
       <div>
-        <main>{children}</main>
         <footer>© Michael McManus {new Date().getFullYear()}</footer>
       </div>
-    </>
+    </div>
   )
 }
 
