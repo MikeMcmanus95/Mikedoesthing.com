@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans");
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: rgb(29, 29, 29);
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: rgb(26, 157, 218);
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: rgb(50, 207, 255);
+}
