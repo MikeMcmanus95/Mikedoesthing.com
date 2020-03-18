@@ -13,3 +13,35 @@ $secondary-color: #eece1a;
     @return #fff;
   }
 }
+
+// Media Query Mixins
+@mixin mediaSm {
+  // Anything we put in here will apply when the screen is less than 500px;
+  @media screen and (max-width: 500px) {
+    // content allows us to import this mixin in other places and add the scss there
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  // Anything we put in here will apply when the screen is greater than
+  // 500px and less than 768px;
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  // Anything we put in here will apply when the screen is greater than 769px and
+  // less than 1170px
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  // Anything we put in here will apply when the screen is greater than 1171px;
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

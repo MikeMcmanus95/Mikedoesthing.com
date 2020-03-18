@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaLinkedin, FaGithub } from "react-icons/fa"
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
 
 const IndexPage = () => (
   <Layout pageId="home" bgImageClass="bgImage">
@@ -14,6 +14,9 @@ const IndexPage = () => (
       Fullstack Web Developer, Software Engineer & Entrepreneur
     </h2>
     <div className="icons">
+      <a href="https://www.instagram.com/mike_givesyouhell/">
+        <FaInstagram size="2em" />
+      </a>
       <a href="https://www.linkedin.com/in/mikemcmanus95/">
         <FaLinkedin size="2em" />
       </a>
