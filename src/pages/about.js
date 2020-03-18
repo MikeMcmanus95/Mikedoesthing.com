@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const About = () => {
   return (
     <div>
-      <Layout>
+      <Layout pageId="about">
         <SEO title="About" />
         <h1>About Me</h1>
         <p>

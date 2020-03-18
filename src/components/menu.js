@@ -1,22 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../css/index.css"
 
 const Menu = () => {
   return (
-    <div>
-      <ul className="navbar">
-        <li className="navlink">
-          <Link to="/">Home</Link>
-        </li>
-        <li className="navlink">
-          <Link to="/about">About</Link>
-        </li>
-        <li className="navlink">
-          <Link to="/projects">Projects</Link>
-        </li>
-      </ul>
-    </div>
+    <header>
+      <div className="menu-btn">
+        <div className="btn-line"></div>
+        <div className="btn-line"></div>
+        <div className="btn-line"></div>
+      </div>
+      <nav className="menu">
+        <div className="menu-branding">
+          <div className="portrait"></div>
+        </div>
+        <ul className="menu-nav">
+          <li className="nav-item">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about">About Me</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/projects">My Work</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/contact">How To Reach Me</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 

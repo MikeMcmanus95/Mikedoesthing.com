@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import CSS from "../css/HeaderSection.module.css"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -27,12 +26,7 @@ const Image = () => {
     }
   `)
 
-  return (
-    <Img
-      className={CSS.profileImg}
-      fixed={data.placeholderImage.childImageSharp.fixed}
-    />
-  )
+  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
 }
 
 export default Image
