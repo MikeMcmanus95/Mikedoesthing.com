@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const Image = ({ portraitClass }) => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "profile.png" }) {
@@ -26,7 +26,12 @@ const Image = () => {
     }
   `)
 
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+  return (
+    <Img
+      fixed={data.placeholderImage.childImageSharp.fixed}
+      className={portraitClass}
+    />
+  )
 }
 
 export default Image
