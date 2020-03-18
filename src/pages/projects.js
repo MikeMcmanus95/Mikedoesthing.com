@@ -34,24 +34,6 @@ const Projects = ({ data }) => {
   )
 }
 
-//  {
-//    data.allMarkdownRemark.edges.map(post => (
-//      <div key={post.node.id}>
-//        <h3>{post.node.frontmatter.title}</h3>
-//        <small>
-//          Posted by {post.node.frontmatter.author} on{" "}
-//          {post.node.frontmatter.date}
-//        </small>
-//        <br />
-//        <br />
-//        <Link to={post.node.frontmatter.path}>Read more</Link>
-//        <br />
-//        <br />
-//        <hr />
-//      </div>
-//    ))
-//  }
-
 export const projQuery = graphql`
   query projectIndexQuery {
     allMarkdownRemark {
