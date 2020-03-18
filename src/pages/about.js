@@ -2,9 +2,12 @@ import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Image from "../components/image"
+import { Link } from "gatsby"
 import { FaJsSquare, FaNode, FaReact, FaGitAlt } from "react-icons/fa"
 
-const About = () => {
+const About = ({ data }) => {
+  const resumePath = data?.allFile?.edges[0]?.node?.publicURL
+
   return (
     <div>
       <Layout pageId="about">
@@ -25,7 +28,10 @@ const About = () => {
               taught by CodePath, Inc. After graduating from Baruch in 2019, I
               knew that I needed more education, so I decided to apply to
               Fullstack Academy. In my free time you can find me playing guitar,
-              skateboarding or playing WoW.
+              skateboarding or playing WoW. You can view my full resume{" "}
+              <Link className="text-secondary" to={resumePath}>
+                here.
+              </Link>
             </p>
             <h3 className="text-secondary">Skills & Technologies</h3>
             <div className="skills">
@@ -73,5 +79,17 @@ const About = () => {
     </div>
   )
 }
+
+export const resumeQuery = graphql`
+  {
+    allFile(filter: { extension: { eq: "pdf" } }) {
+      edges {
+        node {
+          publicURL
+        }
+      }
+    }
+  }
+`
 
 export default About

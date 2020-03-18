@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export const indexQuery = graphql`
+export const resumeQuery = graphql`
   {
     allFile(filter: { extension: { eq: "pdf" } }) {
       edges {
