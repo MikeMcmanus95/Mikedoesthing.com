@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import Image from "../components/image"
+import Img from "gatsby-image"
 import { FaGithub, FaEye } from "react-icons/fa"
 
 const Projects = ({ data }) => {
@@ -15,19 +15,22 @@ const Projects = ({ data }) => {
         </h1>
         <h2 className="sm-heading">Check out some of my projects...</h2>
         <div className="projects">
-          {data.allMarkdownRemark.edges.map(post => (
-            <div className="item" key={post.node.id}>
-              <Link to={post.node.frontmatter.path}>
-                <Image imgPath={post.node.frontmatter.image} />
-              </Link>
-              <a href="#!" className="btn-light">
-                <FaEye /> Project
-              </a>
-              <a href="#!" className="btn-dark">
-                <FaGithub /> Github
-              </a>
-            </div>
-          ))}
+          {data.allProjectsJson.edges.map(post => {
+            console.log(post.node.image)
+            return (
+              <div className="item" key={post.node.title}>
+                <Link to={post.node.path}>
+                  <Img fluid={post.node.image.childImageSharp.fluid} />
+                </Link>
+                <a href="#!" className="btn-light">
+                  <FaEye /> Project
+                </a>
+                <a href="#!" className="btn-dark">
+                  <FaGithub /> Github
+                </a>
+              </div>
+            )
+          })}
         </div>
       </Layout>
     </div>
@@ -36,16 +39,18 @@ const Projects = ({ data }) => {
 
 export const projQuery = graphql`
   query projectIndexQuery {
-    allMarkdownRemark {
+    allProjectsJson {
       edges {
         node {
-          id
-          frontmatter {
-            path
-            title
-            author
-            date
-            image
+          title
+          path
+          author
+          image {
+            childImageSharp {
+              fluid(maxWidth: 400, maxHeight: 400) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
