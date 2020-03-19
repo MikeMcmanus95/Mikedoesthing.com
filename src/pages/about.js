@@ -24,11 +24,11 @@ const About = ({ data }) => {
               I'm a current Teaching Fellow and recent graduate of Fullstack
               Academy, with interests in Web and Mobile development. I started
               my journey as a Software Engineer during my Junior year at Baruch
-              College (go Bearcats) when I took a course in iOS development
-              taught by CodePath, Inc. After graduating from Baruch in 2019, I
-              knew that I needed more education, so I decided to apply to
-              Fullstack Academy. In my free time you can find me playing guitar,
-              skateboarding or playing WoW. You can view my full resume{" "}
+              College when I took a course in iOS development taught by
+              CodePath, Inc. After graduating from Baruch in 2019, I knew that I
+              needed more education, so I decided to apply to Fullstack Academy.
+              In my free time you can find me playing guitar, skateboarding or
+              playing WoW. You can view my full resume{" "}
               <a
                 className="text-secondary"
                 href={resumePath}
