@@ -79,4 +79,10 @@
   .projects {
     grid-template-columns: 1fr;
   }
+
+  .about-info {
+    .bio {
+      font-size: 1.3rem;
+    }
+  }
 }

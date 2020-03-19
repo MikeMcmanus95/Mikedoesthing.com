@@ -18,8 +18,8 @@ const Image = ({ portraitClass }) => {
     query {
       placeholderImage: file(relativePath: { eq: "profile.png" }) {
         childImageSharp {
-          fixed(width: 300, height: 300) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 300, maxHeight: 300) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -28,7 +28,7 @@ const Image = ({ portraitClass }) => {
 
   return (
     <Img
-      fixed={data.placeholderImage.childImageSharp.fixed}
+      fluid={data.placeholderImage.childImageSharp.fluid}
       className={portraitClass}
     />
   )
