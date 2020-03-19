@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
     <Layout pageId="home" bgImageClass="bgImage">
       <SEO title="Home" />
       <h1 className="lg-heading">
-        Mike <span className="text-secondary">McManus</span>
+        Michael <span className="text-secondary">McManus</span>
       </h1>
       <h2 className="sm-heading">
         Fullstack Web Developer, Software Engineer & Entrepreneur ||{" "}
