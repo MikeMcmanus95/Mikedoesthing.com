@@ -29,9 +29,14 @@ const About = ({ data }) => {
               knew that I needed more education, so I decided to apply to
               Fullstack Academy. In my free time you can find me playing guitar,
               skateboarding or playing WoW. You can view my full resume{" "}
-              <Link className="text-secondary" to={resumePath}>
+              <a
+                className="text-secondary"
+                href={resumePath}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 here.
-              </Link>
+              </a>
             </p>
             <h3 className="text-secondary">Skills & Technologies</h3>
             <div className="skills">

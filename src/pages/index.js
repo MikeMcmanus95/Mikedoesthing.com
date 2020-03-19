@@ -17,9 +17,14 @@ const IndexPage = ({ data }) => {
       <h2 className="sm-heading">
         Fullstack Web Developer, Software Engineer & Entrepreneur ||{" "}
         <span>
-          <Link className="text-secondary" to={resumePath} target="_blank">
+          <a
+            className="text-secondary"
+            href={resumePath}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Full Resume
-          </Link>
+          </a>
         </span>
       </h2>
       <div className="icons">

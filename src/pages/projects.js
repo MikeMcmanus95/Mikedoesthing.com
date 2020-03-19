@@ -20,7 +20,10 @@ const Projects = ({ data }) => {
             return (
               <div className="item" key={post.node.title}>
                 <Link to={post.node.path}>
-                  <Img fluid={post.node.image.childImageSharp.fluid} />
+                  <Img
+                    className="proj-image"
+                    fluid={post.node.image.childImageSharp.fluid}
+                  />
                 </Link>
                 <a href="#!" className="btn-light">
                   <FaEye /> Project
@@ -47,7 +50,7 @@ export const projQuery = graphql`
           author
           image {
             childImageSharp {
-              fluid(maxWidth: 400, maxHeight: 400) {
+              fluid {
                 ...GatsbyImageSharpFluid
               }
             }
