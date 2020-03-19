@@ -48,7 +48,7 @@ const Menu = () => {
       <nav className={menu}>
         <div className={menuBranding}>
           <div>
-            <Image portraitClass={"portrait"} />
+            <Image portraitClass={"portrait"} imgPath="profile.png" />
           </div>
         </div>
         <ul className={menuNav}>

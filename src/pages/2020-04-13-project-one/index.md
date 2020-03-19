@@ -3,7 +3,7 @@ path: "/project-one"
 date: "2020-03-13"
 title: "Try Catch"
 author: "Michael McManus"
-image: "https://i.imgur.com/zw7zF2h.png"
+image: "trycatch.png"
 ---
 
 <h1 align="center">Try {Catch}</h1>

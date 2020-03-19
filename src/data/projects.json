@@ -1,0 +1,20 @@
+[
+  {
+    "title": "TryCatch",
+    "author": "Michael Mcmanus",
+    "image": "trycatch.png",
+    "path": "/project-one"
+  },
+  {
+    "title": "StockSim",
+    "author": "Michael Mcmanus",
+    "image": "stocksim.png",
+    "path": "/project-two"
+  },
+  {
+    "title": "NutriQ",
+    "author": "Michael McManus",
+    "image": "nutriq.png",
+    "path": "/project-three"
+  }
+]

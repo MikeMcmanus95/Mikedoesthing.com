@@ -17,7 +17,7 @@ const About = ({ data }) => {
         </h2>
         <h2 className="sm-heading">Let me tell you a few things...</h2>
         <div className="about-info">
-          <Image portraitClass="bio-image" />
+          <Image portraitClass="bio-image" imgPath="profile.png" />
           <div className="bio">
             <h3 className="text-secondary">BIO</h3>
             <p>

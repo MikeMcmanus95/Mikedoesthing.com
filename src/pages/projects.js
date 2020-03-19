@@ -18,7 +18,7 @@ const Projects = ({ data }) => {
           {data.allMarkdownRemark.edges.map(post => (
             <div className="item" key={post.node.id}>
               <Link to={post.node.frontmatter.path}>
-                <img src="https://i.imgur.com/epAlkDf.jpg" alt="project" />
+                <Image imgPath={post.node.frontmatter.image} />
               </Link>
               <a href="#!" className="btn-light">
                 <FaEye /> Project
@@ -45,6 +45,7 @@ export const projQuery = graphql`
             title
             author
             date
+            image
           }
         }
       }
