@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import Image from "./image"
+import Image from "./profileImage"
 
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false)

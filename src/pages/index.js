@@ -3,19 +3,18 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
-import { Link } from "gatsby"
 
 const IndexPage = ({ data }) => {
   const resumePath = data?.allFile?.edges[0]?.node?.publicURL
 
   return (
-    <Layout pageId="home" bgImageClass="bgImage">
+    <Layout pageId="home" bgImageClass="bg-img">
       <SEO title="Home" />
       <h1 className="lg-heading">
         Michael <span className="text-secondary">McManus</span>
       </h1>
       <h2 className="sm-heading">
-        Fullstack Web Developer, Software Engineer & Entrepreneur ||{" "}
+        Fullstack Web Developer, Software Engineer & Teacher ||{" "}
         <span>
           <a
             className="text-secondary"

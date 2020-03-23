@@ -1,5 +1,32 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
+$show-home-image: true;
+$background-opacity: 0.9;
+$home-image: url(../data/background.jpg);
+
+@mixin background {
+  @if $show-home-image {
+    &.bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      // creates a pseudo element that isnt in the html, but css treats it like a real html element
+      // that is over the background image
+      &:after {
+        content: "";
+        // cover the whole body
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
 
 @mixin easeOut {
   transition: all 0.5s ease-out;

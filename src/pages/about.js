@@ -1,8 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import Image from "../components/image"
-import { Link } from "gatsby"
+import Image from "../components/profileImage"
 import { FaJsSquare, FaNode, FaReact, FaGitAlt } from "react-icons/fa"
 
 const About = ({ data }) => {
@@ -21,10 +20,10 @@ const About = ({ data }) => {
           <div className="bio">
             <h3 className="text-secondary">BIO</h3>
             <p>
-              I'm a current Teaching Fellow and recent graduate of Fullstack
-              Academy, with interests in Web and Mobile development. I started
-              my journey as a Software Engineer during my Junior year at Baruch
-              College when I took a course in iOS development taught by
+              I'm a current Software Engineer Fellow and recent graduate of
+              Fullstack Academy, with interests in Web and Mobile development. I
+              started my journey as a Software Engineer during my Junior year at
+              Baruch College when I took a course in iOS development taught by
               CodePath, Inc. After graduating from Baruch in 2019, I knew that I
               needed more education, so I decided to apply to Fullstack Academy.
               In my free time you can find me playing guitar, skateboarding or
