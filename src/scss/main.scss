@@ -18,6 +18,11 @@ body {
   line-height: 1.5;
 }
 
+code {
+  color: rgb(206, 145, 5);
+  background-color: rgb(71, 70, 70);
+}
+
 // Headings
 h1,
 h2,
@@ -35,7 +40,8 @@ h3 {
   }
 }
 
-a {
+a,
+.link {
   color: set-text-color($primary-color);
   text-decoration: none;
 }
@@ -166,6 +172,13 @@ main {
       }
     }
   }
+}
+
+// Single Project Page
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 // Contact Page

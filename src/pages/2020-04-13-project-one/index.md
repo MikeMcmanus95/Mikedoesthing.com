@@ -4,11 +4,9 @@ date: "2020-03-13"
 title: "Try Catch"
 author: "Michael McManus"
 image: "trycatch.png"
-github: "https://github.com/MikeMcmanus95/TryCatch"
-link: "https://try-catch.app"
+next: "/project-two"
 ---
 
-<h1 align="center">Try {Catch}</h1>
 <p align="center">
 A PWA dating app for developers that connects users through photos, shared programming interests, and coding challenges.</p>
 <p align="center">

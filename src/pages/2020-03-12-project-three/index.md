@@ -6,7 +6,6 @@ author: "Michael McManus"
 image: "nutriq.png"
 ---
 
-<h1 align="center">NutriQ</h1>
 <p align="center">
 An iOS application that allows users to create a custom meal plan with recipes based on their fitness goals.</p>
 <p align="center">
