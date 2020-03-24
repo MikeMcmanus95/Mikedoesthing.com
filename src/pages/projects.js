@@ -19,15 +19,21 @@ const Projects = ({ data }) => {
             return (
               <div className="item" key={post.node.title}>
                 <Link to={post.node.path}>
-                  <Img
-                    className="proj-image"
-                    fluid={post.node.image.childImageSharp.fluid}
-                  />
+                  <div className="image-wrapper">
+                    <Img
+                      className="proj-image"
+                      fluid={post.node.image.childImageSharp.fluid}
+                    />
+                    <div className="text-wrapper"> Read more...</div>
+                  </div>
                 </Link>
-                <a href="#!" className="btn-light">
-                  <FaEye /> Project
-                </a>
-                <a href="#!" className="btn-dark">
+
+                <a
+                  href={post.node.github}
+                  className="btn-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaGithub /> Github
                 </a>
               </div>
@@ -47,6 +53,8 @@ export const projQuery = graphql`
           title
           path
           author
+          github
+          link
           image {
             childImageSharp {
               fluid {

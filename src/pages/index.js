@@ -29,13 +29,25 @@ const IndexPage = ({ data }) => {
         </span>
       </h2>
       <div className="icons">
-        <a href="https://www.instagram.com/mike_givesyouhell/">
+        <a
+          href="https://www.instagram.com/mike_givesyouhell/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram size="2em" />
         </a>
-        <a href="https://www.linkedin.com/in/mikemcmanus95/">
+        <a
+          href="https://www.linkedin.com/in/mikemcmanus95/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin size="2em" />
         </a>
-        <a href="https://github.com/MikeMcmanus95">
+        <a
+          href="https://github.com/MikeMcmanus95"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub size="2em" />
         </a>
       </div>

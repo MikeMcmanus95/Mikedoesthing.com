@@ -3,18 +3,23 @@
     "title": "TryCatch",
     "author": "Michael Mcmanus",
     "image": "trycatch.png",
-    "path": "/project-one"
+    "path": "/project-one",
+    "github": "https://github.com/MikeMcmanus95/TryCatch",
+    "link": "https://try-catch.app"
   },
   {
     "title": "StockSim",
     "author": "Michael Mcmanus",
     "image": "stocksim.png",
-    "path": "/project-two"
+    "path": "/project-two",
+    "github": "https://github.com/MikeMcmanus95/StockSim",
+    "link": "https://sim-stock.herokuapp.com/"
   },
   {
     "title": "NutriQ",
     "author": "Michael McManus",
     "image": "nutriq.png",
-    "path": "/project-three"
+    "path": "/project-three",
+    "github": "https://github.com/MikeMcmanus95/NutriQ"
   }
 ]
