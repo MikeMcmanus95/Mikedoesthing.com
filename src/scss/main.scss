@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,7 +12,9 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Raleway", sans-serif;
   line-height: 1.5;
 }
 
@@ -19,6 +22,7 @@ body {
 h1,
 h2,
 h3 {
+  @include noSelect;
   margin: 0;
   font-weight: 400;
   &.lg-heading {
@@ -66,6 +70,8 @@ main {
   }
 
   &#home {
+    @include fade;
+    animation: fadeIn 1.5s;
     overflow: hidden;
     h1 {
       margin-top: 20vh;
