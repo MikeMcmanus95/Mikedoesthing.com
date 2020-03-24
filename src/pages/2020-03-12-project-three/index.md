@@ -11,7 +11,7 @@ An iOS application that allows users to create a custom meal plan with recipes b
 <p align="center">
   <img src="https://media.giphy.com/media/Y2hA1XITggC54e7lZx/giphy.gif" width="300" alt="nutriq"/>
 </p>
-<p align="center">
+<p>
 NutriQ an app that was built by myself and my friend Albert Gertskis as our final project submission
 during our time at CodePath's iOS University. I've always been conscious about health and fitness, frequently using
 apps such as MyFitnessPal and the like, but I found that these apps lacked any real meal planning advice.

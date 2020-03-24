@@ -183,7 +183,7 @@ main {
   background: darken($primary-color, 10);
   .project-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     width: 100%;
@@ -199,8 +199,10 @@ main {
 }
 
 .proj-body {
-  text-align: center;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
   padding: 20px;
   a {
     color: $secondary-color;

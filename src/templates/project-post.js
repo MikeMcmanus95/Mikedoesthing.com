@@ -12,7 +12,7 @@ const ProjectPost = ({ data }) => {
       <div className="proj-title">
         <h1>Home</h1>
         <div className="project-nav">
-          <Link to="/projects" className="link">
+          <Link to="/projects">
             <FaChevronLeft size="2em" />
             <FaChevronLeft size="2em" />
           </Link>
@@ -20,7 +20,7 @@ const ProjectPost = ({ data }) => {
             <h1>{post.frontmatter.title}</h1>
             <h4>{post.frontmatter.date}</h4>
           </div>
-          <Link to={post.frontmatter.next} className="link">
+          <Link to={post.frontmatter.next}>
             <FaChevronRight size="2em" />
             <FaChevronRight size="2em" />
           </Link>
