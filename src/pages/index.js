@@ -3,12 +3,14 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
+import StyledBackgroundSection from "../components/backgroundImage"
 
 const IndexPage = ({ data }) => {
   const resumePath = data?.allFile?.edges[0]?.node?.publicURL
 
   return (
-    <Layout pageId="home" bgImageClass="bg-img">
+    <Layout pageId="home">
+      <StyledBackgroundSection id="bg-img" />
       <SEO title="Home" />
       <h1 className="lg-heading">
         Michael <span className="text-secondary">McManus</span>

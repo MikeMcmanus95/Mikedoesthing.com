@@ -2,12 +2,10 @@ $primary-color: #292a31;
 $secondary-color: #6bd1fa;
 $show-home-image: true;
 $background-opacity: 0.9;
-$home-image: url(../data/background.jpg);
 
 @mixin background {
   @if $show-home-image {
-    &.bg-img {
-      background: $home-image;
+    &#bg-img {
       background-attachment: fixed;
       background-size: cover;
 

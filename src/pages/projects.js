@@ -16,7 +16,6 @@ const Projects = ({ data }) => {
         <h2 className="sm-heading">Check out some of my projects...</h2>
         <div className="projects">
           {data.allProjectsJson.edges.map(post => {
-            console.log(post.node.image)
             return (
               <div className="item" key={post.node.title}>
                 <Link to={post.node.path}>

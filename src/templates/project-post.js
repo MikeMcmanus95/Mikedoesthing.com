@@ -11,11 +11,10 @@ const ProjectPost = ({ data }) => {
         <SEO title={post.frontmatter.path} />
         <Link to="/projects">Go Back</Link>
         <hr />
-        <h1>{post.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <h4>
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Layout>
     </div>
   )
