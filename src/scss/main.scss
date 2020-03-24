@@ -19,8 +19,13 @@ body {
 }
 
 code {
-  color: rgb(206, 145, 5);
+  color: rgb(240, 168, 2);
   background-color: rgb(71, 70, 70);
+  font-size: 1.2rem;
+}
+
+::selection {
+  background: #b7fdff;
 }
 
 // Headings
@@ -40,10 +45,13 @@ h3 {
   }
 }
 
-a,
-.link {
+a {
   color: set-text-color($primary-color);
   text-decoration: none;
+  &:hover {
+    color: $secondary-color;
+    @include easeOut();
+  }
 }
 
 header {
@@ -67,11 +75,6 @@ main {
     margin-top: 1rem;
     a {
       padding: 0.4rem;
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
-      }
     }
   }
 
@@ -175,10 +178,41 @@ main {
 }
 
 // Single Project Page
-.project-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.proj-title {
+  text-align: center;
+  background: darken($primary-color, 10);
+  .project-nav {
+    display: flex;
+    justify-content: space-between;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    width: 100%;
+    border-bottom: 1px solid;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    h4 {
+      margin: 0;
+    }
+  }
+}
+
+.proj-body {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  a {
+    color: $secondary-color;
+    font-weight: bold;
+    &:hover {
+      color: set-text-color($primary-color);
+      @include easeOut;
+    }
+  }
+  ul {
+    list-style-type: none;
+  }
 }
 
 // Contact Page

@@ -8,25 +8,28 @@ const ProjectPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <div>
-      <Layout>
-        <SEO title={post.frontmatter.title} />
+      <SEO title={post.frontmatter.title} />
+      <div className="proj-title">
+        <h1>Home</h1>
         <div className="project-nav">
           <Link to="/projects" className="link">
             <FaChevronLeft size="2em" />
             <FaChevronLeft size="2em" />
           </Link>
-          <h1>{post.frontmatter.title}</h1>
+          <div className="title-wrapper">
+            <h1>{post.frontmatter.title}</h1>
+            <h4>{post.frontmatter.date}</h4>
+          </div>
           <Link to={post.frontmatter.next} className="link">
             <FaChevronRight size="2em" />
             <FaChevronRight size="2em" />
           </Link>
         </div>
-        <hr />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <h4>
-          Posted by {post.frontmatter.author} on {post.frontmatter.date}
-        </h4>
-      </Layout>
+      </div>
+      <div
+        className="proj-body"
+        dangerouslySetInnerHTML={{ __html: post.html }}
+      />
     </div>
   )
 }

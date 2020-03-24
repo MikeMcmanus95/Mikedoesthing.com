@@ -40,7 +40,7 @@ In the `Await` feed, users can see who has liked them already, along with viewin
 The `Catch` feed is where you can see all the users that you have matched with. A match is created when there is a mutual `Like`. From this screen, you can click on a user to chat in realtime.
 
 <h3 align="center">
-Visit our app and try it out for yourself to see of these features in action:
+Visit our app at:
 <a href="https://try-catch.app/">try-catch.app</a>
 </h3>
 

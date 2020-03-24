@@ -10,7 +10,10 @@ const Contact = () => {
         <h1 className="lg-heading">
           Contact <span className="text-secondary">Me</span>
         </h1>
-        <h2 className="sm-heading">This is how you can reach me...</h2>
+        <h2 className="sm-heading">
+          Feel free to send me an email or message on LinkedIn. I'm always open
+          to new opportunities!
+        </h2>
         <div className="boxes">
           <a
             href="mailto:mikemcmanus95@gmail.com"
