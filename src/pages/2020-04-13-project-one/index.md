@@ -23,7 +23,7 @@ as a result that was what we ended up using. I also wanted a website that can ef
 as a mobile app, so we added Progressive Web Application functionality as well. For our frontend, we used
 React and Redux for reusable components and effective state management.
 
-You can take a look at our code to see how we implemented our <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/likes.js" target="_blank" rel="noopener noreferrer"> custom matching algorithm </a>, as well as other cool features like <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/chat.js" target="_blank" rel="noopener noreferrer">realtime chat!</a>
+You can take a look at our code to see how we implemented our <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/likes.js" target="_blank" rel="noopener noreferrer"> custom matching algorithm</a>, as well as other cool features like <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/chat.js" target="_blank" rel="noopener noreferrer">realtime chat!</a>
 
 ## Contributors
 
