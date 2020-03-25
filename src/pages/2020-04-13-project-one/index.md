@@ -15,6 +15,10 @@ Check it out <a href="https://try-catch.app" target="_blank" rel="noopener noref
   <img src="https://i.imgur.com/zw7zF2h.png" width="300" alt="trycatch"/>
 </p>
 
+<p align="center">
+<iframe src="https://www.youtube.com/embed/7vTP6_Bbv9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
 This was an app that was built as my final project submission for Fullstack Academy. My teammates
 and I decided to make a social media, dating app esque site, that allowed users to connect and chat
 with eachother, much like Tinder or Hinge. We also wanted to implement new technologies outside of
