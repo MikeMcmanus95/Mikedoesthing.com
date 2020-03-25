@@ -9,7 +9,7 @@ const About = ({ data }) => {
 
   return (
     <div>
-      <Layout pageId="about">
+      <Layout pageId="about" currentIdx={1}>
         <SEO title="About" />
         <h2 className="lg-heading">
           About <span className="text-secondary">Me</span>

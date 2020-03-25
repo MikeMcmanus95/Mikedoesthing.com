@@ -49,6 +49,10 @@ $background-opacity: 0.9;
   transition: all 0.5s ease-out;
 }
 
+@mixin linear {
+  transition: all 0.5s linear;
+}
+
 // Set Text Color
 @function set-text-color($color) {
   @if (lightness($color) > 40) {

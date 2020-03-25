@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Image from "./profileImage"
 
-const Menu = () => {
+const Menu = ({ currentIdx }) => {
   const [showMenu, setShowMenu] = useState(false)
   const [menuBtn, setMenuBtn] = useState("menu-btn")
   const [menu, setMenu] = useState("menu")
@@ -15,18 +15,26 @@ const Menu = () => {
     "nav-item",
   ])
 
+  // Loop over nav items and add the 'show' or 'current' class as needed.
+  const updateNavItems = (navItems, newClassName, navItemIdx) => {
+    const newNavItems = navItems.map((item, index) => {
+      if (navItemIdx !== undefined && navItemIdx === index)
+        item += " " + newClassName
+      else if (navItemIdx === undefined) {
+        item += " " + newClassName
+      }
+      return item
+    })
+    setNavItem(newNavItems)
+  }
+
   const toggleMenu = () => {
     if (!showMenu) {
       setMenuBtn("menu-btn show")
       setMenu("menu show")
       setMenuNav("menu-nav show")
       setMenuBranding("menu-branding show")
-      setNavItem([
-        "nav-item show",
-        "nav-item show",
-        "nav-item show",
-        "nav-item show",
-      ])
+      updateNavItems(navItem, "show")
       setShowMenu(true)
     } else {
       setMenuBtn("menu-btn")
@@ -37,6 +45,11 @@ const Menu = () => {
       setShowMenu(false)
     }
   }
+
+  // On mount, set the 'current' class to the selected nav-item, via currentIdx prop
+  useEffect(() => {
+    updateNavItems(navItem, "current", currentIdx)
+  }, [])
 
   return (
     <header>
@@ -64,7 +77,7 @@ const Menu = () => {
           </li>
           <li className={navItem[2]}>
             <Link to="/projects" className="nav-link">
-              My Work
+              My Projects
             </Link>
           </li>
           <li className={navItem[3]}>

@@ -8,7 +8,7 @@ next: "/project-two"
 ---
 
 <p align="center">
-A PWA dating app for developers that connects users through photos, shared programming interests, and coding challenges.</p>
+A dating app for developers that connects users through photos, shared programming interests, and coding challenges.</p>
 <p align="center">
   <img src="https://i.imgur.com/zw7zF2h.png" width="300" alt="trycatch"/>
 </p>

@@ -3,17 +3,17 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-import { FaGithub, FaEye } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 
 const Projects = ({ data }) => {
   return (
     <div>
-      <Layout pageId="work">
+      <Layout pageId="work" currentIdx={2}>
         <SEO title="Projects" />
         <h1 className="lg-heading">
-          My <span className="text-secondary">Work</span>
+          My <span className="text-secondary">Projects</span>
         </h1>
-        <h2 className="sm-heading">Check out some of my projects...</h2>
+        <h2 className="sm-heading">Check out some of my work...</h2>
         <div className="projects">
           {data.allProjectsJson.edges.map(post => {
             return (

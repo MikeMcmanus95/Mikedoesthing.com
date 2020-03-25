@@ -11,10 +11,10 @@ import PropTypes from "prop-types"
 import Menu from "./menu"
 import "../scss/main.scss"
 
-const Layout = ({ children, pageId, bgImageClass }) => {
+const Layout = ({ children, pageId, currentIdx }) => {
   return (
-    <div className={bgImageClass}>
-      <Menu />
+    <div>
+      <Menu currentIdx={currentIdx} />
       <main id={pageId}>{children}</main>
       <div>
         <footer id="main-footer">

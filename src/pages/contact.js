@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const Contact = () => {
   return (
     <div>
-      <Layout pageId="contact">
+      <Layout pageId="contact" currentIdx={3}>
         <SEO title="Contact" />
         <h1 className="lg-heading">
           Contact <span className="text-secondary">Me</span>

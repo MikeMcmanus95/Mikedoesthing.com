@@ -1,5 +1,9 @@
 @import "config";
 @import "menu";
+@import "about";
+@import "projects";
+@import "singleProject";
+@import "contact";
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 * {
@@ -66,7 +70,6 @@ header {
 
 main {
   padding: 4rem;
-  // height: 100%;
   // this sets the height of main - regardless of content- to be 100 viewport height,
   // minus the height of our footer, which pushes the footer to the bottom
   min-height: calc(100vh - 60px);
@@ -84,160 +87,6 @@ main {
     overflow: hidden;
     h1 {
       margin-top: 20vh;
-    }
-  }
-}
-
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
-
-  .skills {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .bio-image {
-    grid-area: bioimage;
-    margin: auto 0;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
-
-  .job-1 {
-    grid-area: job1;
-  }
-
-  .job-2 {
-    grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
-  }
-
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
-  }
-}
-
-// Work / Projects
-.projects {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  .item {
-    height: 90%;
-    margin-bottom: 0;
-  }
-  .image-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border: 3px #fff solid;
-    .text-wrapper {
-      position: absolute;
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-      width: 100%;
-      height: 30%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0;
-      margin: auto;
-    }
-    .proj-image {
-      height: 100%;
-    }
-    &:hover {
-      border-color: $secondary-color;
-      .proj-image {
-        opacity: 0.5;
-        @include easeOut;
-      }
-      .text-wrapper {
-        opacity: 1;
-        @include easeOut;
-      }
-    }
-  }
-}
-
-// Single Project Page
-.proj-title {
-  text-align: center;
-  background: darken($primary-color, 10);
-  .project-nav {
-    display: flex;
-    justify-content: space-evenly;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    width: 100%;
-    border-bottom: 1px solid;
-    padding: 5px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    h4 {
-      margin: 0;
-    }
-  }
-}
-
-.proj-body {
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  margin: 0 auto;
-  padding: 20px;
-  a {
-    color: $secondary-color;
-    font-weight: bold;
-    &:hover {
-      color: set-text-color($primary-color);
-      @include easeOut;
-    }
-  }
-  ul {
-    list-style-type: none;
-  }
-}
-
-// Contact Page
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
-
-  div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    @include easeOut;
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
-        color: set-text-color($secondary-color);
-      }
     }
   }
 }

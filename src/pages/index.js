@@ -9,14 +9,14 @@ const IndexPage = ({ data }) => {
   const resumePath = data?.allFile?.edges[0]?.node?.publicURL
 
   return (
-    <Layout pageId="home">
+    <Layout pageId="home" currentIdx={0}>
       <StyledBackgroundSection id="bg-img" />
       <SEO title="Home" />
       <h1 className="lg-heading">
         Michael <span className="text-secondary">McManus</span>
       </h1>
       <h2 className="sm-heading">
-        Fullstack Web Developer, Software Engineer & Teacher ||{" "}
+        Software Engineer & Fullstack Web Developer ||{" "}
         <span>
           <a
             className="text-secondary"
