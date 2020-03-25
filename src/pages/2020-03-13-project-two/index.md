@@ -9,7 +9,7 @@ prev: "/project-one"
 ---
 
 <p align="center">
-  Stock Sim is a realtime public stock trading simulator that utilizes the IEX API.
+  A realtime public stock trading simulator that utilizes the IEX API.
 </p>
 <p align="center">
   <img src="https://i.imgur.com/lq1teuW.png" width="500" alt="Portfolio"/>
