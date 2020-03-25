@@ -9,7 +9,7 @@ next: "/project-two"
 
 <p align="center">
 A dating app for developers that connects users through photos, shared programming interests, and coding challenges.
-Check it out <a href="https://try-catch.app">here!</a>
+Check it out <a href="https://try-catch.app" target="_blank" rel="noopener noreferrer">here!</a>
 </p>
 <p align="center">
   <img src="https://i.imgur.com/zw7zF2h.png" width="300" alt="trycatch"/>
@@ -23,12 +23,12 @@ as a result that was what we ended up using. I also wanted a website that can ef
 as a mobile app, so we added Progressive Web Application functionality as well. For our frontend, we used
 React and Redux for reusable components and effective state management.
 
-You can take a look at our code to see how we implemented our <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/likes.js"> custom matching algorithm </a>, as well as other cool features like <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/chat.js">realtime chat!</a>
+You can take a look at our code to see how we implemented our <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/likes.js" target="_blank" rel="noopener noreferrer"> custom matching algorithm </a>, as well as other cool features like <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/chat.js" target="_blank" rel="noopener noreferrer">realtime chat!</a>
 
 ## Contributors
 
-- <a href="https://github.com/sjoseph11236">Sayeed Joseph</a>
-- <a href="https://github.com/camryn-perry">Camryn Perry</a>
-- <a href="https://github.com/mcs2019">Marcos Santanna</a>
-- <a href="https://github.com/MikeMcmanus95">Michael Mcmanus</a>
-- <a href="https://github.com/kkmartinez95">Kaitlyn Martinez</a>
+- <a href="https://github.com/sjoseph11236" target="_blank" rel="noopener noreferrer">Sayeed Joseph</a>
+- <a href="https://github.com/camryn-perry" target="_blank" rel="noopener noreferrer">Camryn Perry</a>
+- <a href="https://github.com/mcs2019" target="_blank" rel="noopener noreferrer">Marcos Santanna</a>
+- <a href="https://github.com/MikeMcmanus95" target="_blank" rel="noopener noreferrer">Michael Mcmanus</a>
+- <a href="https://github.com/kkmartinez95" target="_blank" rel="noopener noreferrer">Kaitlyn Martinez</a>
