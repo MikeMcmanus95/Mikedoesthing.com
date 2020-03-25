@@ -12,6 +12,7 @@
   top: 0;
   h4 {
     margin: 0;
+    color: #444;
   }
   a {
     align-items: center;
@@ -24,7 +25,7 @@
   flex-direction: column;
   width: 65%;
   margin: 0 auto;
-  margin-top: 88px;
+  margin-top: 120px;
   a {
     color: $secondary-color;
     font-weight: bold;
@@ -36,4 +37,9 @@
   ul {
     list-style-type: none;
   }
+}
+
+.placeholder {
+  height: 64px;
+  width: 72px;
 }

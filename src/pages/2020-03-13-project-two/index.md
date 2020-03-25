@@ -5,6 +5,7 @@ title: "Stock Sim"
 author: "Michael McManus"
 image: "stocksim.png"
 next: "/project-three"
+prev: "/project-one"
 ---
 
 <p align="center">

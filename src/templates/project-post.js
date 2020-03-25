@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
+import { FaChevronLeft, FaChevronRight, FaHome } from "react-icons/fa"
 
 const ProjectPost = ({ data }) => {
   const post = data.markdownRemark
@@ -10,11 +10,18 @@ const ProjectPost = ({ data }) => {
     <div>
       <SEO title={post.frontmatter.title} />
       <div className="proj-nav">
-        <Link to="/projects">
-          <FaChevronLeft size="2em" />
-          <FaChevronLeft size="2em" />
-        </Link>
+        {post.frontmatter.prev ? (
+          <Link to={post.frontmatter.prev}>
+            <FaChevronLeft size="2em" />
+            <FaChevronLeft size="2em" />
+          </Link>
+        ) : (
+          <div className="placeholder" />
+        )}
         <div className="title-wrapper">
+          <Link to="/">
+            <FaHome size="2em" />
+          </Link>
           <h1>{post.frontmatter.title}</h1>
           <h4>{post.frontmatter.date}</h4>
         </div>
@@ -24,7 +31,7 @@ const ProjectPost = ({ data }) => {
             <FaChevronRight size="2em" />
           </Link>
         ) : (
-          <div />
+          <div className="placeholder" />
         )}
       </div>
       <div
@@ -45,6 +52,7 @@ export const projectQuery = graphql`
         author
         date
         next
+        prev
       }
     }
   }

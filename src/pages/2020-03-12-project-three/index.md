@@ -4,6 +4,7 @@ date: "2020-03-12"
 title: "NutriQ"
 author: "Michael McManus"
 image: "nutriq.png"
+prev: "/project-two"
 ---
 
 <p align="center">
