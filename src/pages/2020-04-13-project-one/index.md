@@ -8,41 +8,22 @@ next: "/project-two"
 ---
 
 <p align="center">
-A dating app for developers that connects users through photos, shared programming interests, and coding challenges.</p>
+A dating app for developers that connects users through photos, shared programming interests, and coding challenges.
+Check it out <a href="https://try-catch.app">here!</a>
+</p>
 <p align="center">
   <img src="https://i.imgur.com/zw7zF2h.png" width="300" alt="trycatch"/>
 </p>
 
-# Walkthrough
+This was an app that was built as my final project submission for Fullstack Academy. My teammates
+and I decided to make a social media, dating app esque site, that allowed users to connect and chat
+with eachother, much like Tinder or Hinge. We also wanted to implement new technologies outside of
+what we learned at Fullstack. I advocated for using a NoSQL database, specifically Firebase, and
+as a result that was what we ended up using. I also wanted a website that can effectively function
+as a mobile app, so we added Progressive Web Application functionality as well. For our frontend, we used
+React and Redux for reusable components and effective state management.
 
-**Sign Up**
-
-We begin by clicking the `Sign Up` button, and filling out some basic info.
-
-**Customize Your Profile**
-
-Next, we have the option to add extra user information such as preferences to fine tune your matches.
-
-**The Try Feed**
-
-After selecting your preferences, your `Try` feed will render a stack of prospects that match your age and gender interest. You can press the green `Like` button to indicate your interest in the person.
-
-**Answering Coding Challenges**
-
-Some user profiles will have optional coding challenges that you can complete. You can click the `Submit` button in the bottom right once you're done. This is effectively the same as sending a like.
-
-**The Await Feed**
-
-In the `Await` feed, users can see who has liked them already, along with viewing a users code if they have submitted any.
-
-**The Catch Feed**
-
-The `Catch` feed is where you can see all the users that you have matched with. A match is created when there is a mutual `Like`. From this screen, you can click on a user to chat in realtime.
-
-<h3 align="center">
-Visit our app at:
-<a href="https://try-catch.app/">try-catch.app</a>
-</h3>
+You can take a look at our code to see how we implemented our <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/likes.js"> custom matching algorithm </a>, as well as other cool features like <a href="https://github.com/codewars-clone/TryCatch/blob/master/src/client/store/reducers/chat.js">realtime chat!</a>
 
 ## Contributors
 
@@ -51,7 +32,3 @@ Visit our app at:
 - <a href="https://github.com/mcs2019">Marcos Santanna</a>
 - <a href="https://github.com/MikeMcmanus95">Michael Mcmanus</a>
 - <a href="https://github.com/kkmartinez95">Kaitlyn Martinez</a>
-
-## Resources
-
-React, Redux, Firebase
