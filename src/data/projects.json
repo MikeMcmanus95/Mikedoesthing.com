@@ -21,5 +21,13 @@
     "image": "nutriq.png",
     "path": "/project-three",
     "github": "https://github.com/MikeMcmanus95/NutriQ"
+  },
+  {
+    "title": "FireKicks",
+    "author": "Michael McManus",
+    "image": "firekicks.png",
+    "path": "/project-four",
+    "github": "https://github.com/MikeMcmanus95/FireKicks",
+    "link": "https://fire-kicks.herokuapp.com"
   }
 ]
