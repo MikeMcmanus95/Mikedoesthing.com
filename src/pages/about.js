@@ -26,8 +26,9 @@ const About = ({ data }) => {
               Baruch College when I took a course in iOS development taught by
               CodePath, Inc. After graduating from Baruch in 2019, I knew that I
               needed more education, so I decided to apply to Fullstack Academy.
-              In my free time you can find me playing guitar, skateboarding or
-              playing WoW. You can view my full resume{" "}
+              I enjoy building lean, practical applications and learning new
+              things along the way. In my free time you can find me playing
+              guitar, skateboarding or playing WoW. You can view my full resume{" "}
               <a
                 className="text-secondary"
                 href={resumePath}
