@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
+import { FaLinkedin, FaGithub } from "react-icons/fa"
 import StyledBackgroundSection from "../components/backgroundImage"
 
 const IndexPage = ({ data }) => {
@@ -29,13 +29,6 @@ const IndexPage = ({ data }) => {
         </span>
       </h2>
       <div className="icons">
-        <a
-          href="https://www.instagram.com/mike_givesyouhell/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram size="2em" />
-        </a>
         <a
           href="https://www.linkedin.com/in/mikemcmanus95/"
           target="_blank"
